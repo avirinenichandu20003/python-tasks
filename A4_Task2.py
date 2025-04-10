@@ -1,0 +1,15 @@
+file1=open(".venv/sample.txt","r+")
+a=input("Enter Text to write to the file")
+(file1.write(a + ","))
+print("Data Sucessfully Written to the file\n")
+file1.close()
+
+file1=open(".venv/sample.txt","a")
+b=input("Enter Text to write to the file")
+(file1.write(b))
+print("Data Sucessfully Written to the file\n")
+file1.close()
+
+file1=open(".venv/sample.txt","r")
+print("Final Content of file :","\n",file1.read())
+file1.close()
